@@ -9,7 +9,7 @@ require 'html/header.html';
                 require_once 'connect_to_db.php';
                 $sno = $_GET['part'];
                 mysqli_set_charset( $con, 'utf8');
-                $retrieve = mysqli_query($con, "SELECT * FROM sno WHERE part='$sno'");
+                $retrieve = mysqli_query($con, "SELECT * FROM geet WHERE part='$sno'");
                 if (mysqli_num_rows($retrieve) > 0) {
                     $i=0;     
                     while($row = mysqli_fetch_array($retrieve)) {
