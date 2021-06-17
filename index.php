@@ -17,7 +17,7 @@ require 'html/header.html';
             <a href="https://www.youtube.com/watch?v=C6JR7TfXPoQ&list=PLhKX4OoBv7kRfT_YEf40SzQRTPqk6wGTl">Click Here )</a><Br><Br>
             <?php
                 require_once 'connect_to_db.php';
-                $retrieve = mysqli_query($con, "SELECT * FROM sno");
+                $retrieve = mysqli_query($con, "SELECT * FROM geet WHERE sno");
                 if (mysqli_num_rows($retrieve) > 0) {
                     $i=0;
                     while($row = mysqli_fetch_array($retrieve)) {
