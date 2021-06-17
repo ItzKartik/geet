@@ -19,9 +19,9 @@ require 'html/header.html';
                 <source src="<?php echo $row['music']; ?>"> 
             </audio>
             <?php
-                        // echo '<br><Br><br><div class="bhajan mx-auto text-left"><p style="font-family: Kruti;">'.nl2br(stripslashes($row['bhajan'])).'</p></div>';
+                        echo '<br><Br><br><div class="bhajan mx-auto text-left"><p style="font-family: Kruti;">'.nl2br(stripslashes($row['bhajan'])).'</p></div>';
                         // echo '<img class="part_imgs" src="uploads/part'.$row['part'].'.png" alt="">';
-                        echo '<img class="part_imgs" src="'.$row['img_link'].'" alt="">';
+                        // echo '<img class="part_imgs" src="'.$row['img_link'].'" alt="">';
                         $i++;
                     }
                 }
